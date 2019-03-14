@@ -2,14 +2,14 @@
 
 ## The story
 
-A friend of yours started working on this application few hours ago. He sees himself as a python guru, so he didn't waste his precious time for debugging or even running his program. He's 100% sure everything works (almost) fine, well, maybe it just needs a few tweaks here and there. Unfortunately, it's now your job to fix it and finish this program (life is brutal and full of zasadzkas...) 
+A friend of yours started working on this application a few hours ago. He sees himself as a python guru, so he didn't waste his precious time for debugging or even running his program. He's 100% sure everything works (almost) fine, well, maybe it just needs a few tweaks here and there. Unfortunately, he jumped into another program and now it's now your job to fix it and finish this program (life is brutal and full of zasadzkas...) 
 
 
 ## The program
 
-This programm consists of three files:
-* `tasks.txt` - a text file, which should be imported at the beginning of program
-* `data_access.py` - a python file containing functions for reading txt file and converting raw data into a list of lists
+This program consists of three files:
+* `tasks.txt` - a text file, which should be imported at the beginning of program,
+* `data_access.py` - a python file containing functions for reading txt file and converting raw data into a list of lists,
 * `main.py` - a main python file
 
 
@@ -26,8 +26,8 @@ An example:
  task = [True, 'Buy some milk']
 ```
 
-## Output
-```python
+## Expected Output
+```text
 Tasks file has been imported.
 
 Select action [list, add, mark]: list
@@ -47,7 +47,7 @@ Select action [list, add, mark]: list
 5. [ ] Have fun!
 
 Select action [list, add, mark]: mark
-Which task should me marked? 4
+Which task should be marked? 4
 
 Select action [list, add, mark]: list
 1. [X] Get some sleep
