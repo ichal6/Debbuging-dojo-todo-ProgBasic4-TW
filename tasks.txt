@@ -1,0 +1,5 @@
+STATUS | TASK DESCRIPTION
+True   | Get some sleep
+False  | Learn Python
+True   | Drink some coffee
+False  | Eat lunch
