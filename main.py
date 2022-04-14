@@ -1,11 +1,13 @@
+import data_access
+
+
 def list_tasks(tasks):
     for index in range(len(tasks)):
-        index = index + 1
-        if tasks[i][0] == 'True':
-            print(index + '. [X] ' + tasks[index][1])
+        if tasks[index][0] is True:
+            print(str(index + 1) + '. [X] ' + tasks[index][1])
         else:
-            print(index + '. [ ] ' + tasks[index][1])
-        
+            print(str(index + 1) + '. [ ] ' + tasks[index][1])
+
 
 def add_task(tasks):
     new_task = input("Please enter new task: ")
@@ -14,7 +16,8 @@ def add_task(tasks):
 
 
 def mark_task(tasks):
-    task_to_mark = input("Which task should be marked? ")
+    task_to_mark = int(input("Which task should be marked? "))
+    task_to_mark += 1
     for index in range(len(tasks)):
         if(task_to_mark == index):
             tasks[index][1] = True
@@ -24,10 +27,10 @@ def mark_task(tasks):
 def main():
     tasks = []
     file_name = 'tasks.txt'
-    raw_data = read_file(file_name)
-    split_tasks(raw_data)
+    raw_data = data_access.read_file(file_name)
+    tasks = data_access.split_tasks(raw_data)
     print("Tasks file has been imported.")
-    
+
     is_running = True
     while is_running:
         print('    ')
